@@ -84,7 +84,7 @@ desc_num=[
     oldpeak: ST depression induced by exercise relative to rest (continuous variable).'
     ''']
 if st.checkbox('Details Continuous numerical variables:'):
-    st.write([desc_num(i) for i in (len(desc_num))])
+    st.write([desc_num(i) for i in range (len(desc_num))])
 
 if st.checkbox('Details and unique values of categorical variables:'):
     unique_dict = {col : health[col].unique() for col in health.columns}
