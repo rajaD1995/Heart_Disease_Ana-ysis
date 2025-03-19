@@ -86,9 +86,28 @@ desc_num=[
 if st.checkbox('Details Continuous numerical variables:'):
     st.write(i for i in desc_num)
 
-if st.checkbox('Details and unique values of categorical variables:'):
-    unique_dict = {col : health[col].unique() for col in health.columns}
-    st.write(f'{key} : {unique_dict[key]}  {desc_cat[i]} \n' for i, key in enumerate(k2))
+# Create checkboxes for each categorical variables
+# Create "Select All" checkbox
+select_all = st.checkbox("Select to View Details of all categorical variables")
+
+checked_vars = []
+if not select_all:
+    for i, key in enumerate(k2):
+        if st.checkbox(f"Show details for '{key}'"):
+            checked_vars.append(key)
+else:
+    # If 'Select All' is checked, add all variables
+    checked_vars = k2
+
+# Show details if any variable is selected
+if checked_vars:
+    st.subheader("Details and Unique Values of Selected Variables")
+    unique_dict = {col: health[col].unique() for col in checked_vars}
+    for i, key in enumerate(k2):
+        if key in checked_vars:
+            st.write(f"**{key}:** {unique_dict[key]}  \n{desc_cat[i]}")
+
+
 st.header('`Visualization`')
 st.header('Analysis of `target` feature variable')
 st.subheader(
