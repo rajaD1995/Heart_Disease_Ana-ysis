@@ -9,7 +9,7 @@ warnings.filterwarnings('ignore')
 #load data
 @st.cache_data
 def load_data():
-    health = pd.read_csv(r'C:\Users\USER\Documents\Python\Nareshit data analysis\Data analysis\EDA- HEALTHCARE DOMAIN\Heart_disease_analysis\heart.csv')
+    health = pd.read_csv(r'heart.csv')
     
     return health
 health = load_data()
