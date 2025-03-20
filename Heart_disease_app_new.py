@@ -598,7 +598,7 @@ select_all = st.sidebar.checkbox("Select All", value=True)
 home_selected = st.sidebar.checkbox("Home", value=select_all)
 descr_selected = st.sidebar.checkbox("Descrption of Attributes", value=select_all)
 viz_selected = st.sidebar.checkbox("Visualization", value=select_all)
-insights_selected = st.sidebar.checkbox("Key Insights", , value=select_all)
+insights_selected = st.sidebar.checkbox("Key Insights", value=select_all)
 
 # Collect Selected Sections
 selected_sections = []
