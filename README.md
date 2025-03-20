@@ -9,3 +9,8 @@ This project is built using Streamlit and visualizes Heart Disease data.
 <a href="https://heartdiseaseana-ysis-ruugqf7pfiy5jbb3jk5kse.streamlit.app/" target="_blank">🩺 Heart Disease Analysis Web App</a>
 
 
+## 🩺 Heart Disease Analysis App
+This project is built using Streamlit and visualizes Heart Disease data.  
+👉 **Click here to view the app:**  
+
+<a href="https://heartdiseaseana-ysis-ruugqf7pfiy5jbb3jk5kse.streamlit.app/" target="_blank">🩺 Heart Disease Analysis Web App</a>
