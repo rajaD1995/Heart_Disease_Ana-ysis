@@ -6,5 +6,6 @@ This project is built using Streamlit and visualizes Heart Disease data.
 ## 🩺 Heart Disease Analysis App With Navigation Feature
 This project is built using Streamlit and visualizes Heart Disease data.  
 👉 **Click here to view the app:**  
-[🩺 Heart Disease Analysis Web App](https://heartdiseaseana-ysis-ruugqf7pfiy5jbb3jk5kse.streamlit.app/)
+<a href="https://heartdiseaseana-ysis-ruugqf7pfiy5jbb3jk5kse.streamlit.app/" target="_blank">🩺 Heart Disease Analysis Web App</a>
+
 
